@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Yanni Timmerman 3de bachelor ",
-    "currentPage": "- Contact.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -19,8 +19,8 @@
         "display2Size": "1",
         "display5Font": "Roboto Mono",
         "display5Size": 1.5,
-        "display7Font": "Raleway",
-        "display7Size": "1.6",
+        "display7Font": "Open Sans Condensed",
+        "display7Size": "0.8",
         "display4Font": "Rubik",
         "display4Size": 1,
         "isRoundedButtons": false,
@@ -49,11 +49,16 @@
         "css": "'Roboto Mono', monospace",
         "name": "Roboto Mono",
         "url": "https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+      },
+      {
+        "css": "'Open Sans Condensed', sans-serif",
+        "name": "Open Sans Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700"
       }
     ],
     "favicon": "",
     "noImageResize": "true",
-    "uniqCompNum": 112,
+    "uniqCompNum": 111,
     "versionPublish": "4.8.3",
     "screenshot": "screenshot.png",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-126696837-1\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'UA-126696837-1');\r\n</script>",
@@ -1156,106 +1161,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".row-links": {
-              "width": "100%",
-              "justify-content": "center",
-              "-webkit-justify-content": "center"
-            },
-            ".social-row": {
-              "width": "100%",
-              "justify-content": "center",
-              "-webkit-justify-content": "center"
-            },
-            ".media-container-row": {
-              "flex-direction": "column",
-              "justify-content": "center",
-              "align-items": "center",
-              "-webkit-flex-direction": "column",
-              "-webkit-justify-content": "center",
-              "-webkit-align-items": "center",
-              ".foot-menu": {
-                "list-style": "none",
-                "display": "-webkit-flex",
-                "justify-content": "center",
-                "flex-wrap": "wrap",
-                "padding": "0",
-                "margin-bottom": "0",
-                "-webkit-justify-content": "center",
-                "-webkit-flex-wrap": "wrap",
-                "li": {
-                  "padding": "0 1rem 1rem 1rem",
-                  "p": {
-                    "margin": "0"
-                  }
-                }
-              },
-              ".social-list": {
-                "padding-left": "0",
-                "margin-bottom": "0",
-                "list-style": "none",
-                "display": "-webkit-flex",
-                "flex-wrap": "wrap",
-                "justify-content": "flex-end",
-                "-webkit-justify-content": "flex-end",
-                "-webkit-flex-wrap": "wrap",
-                ".mbr-iconfont-social": {
-                  "font-size": "1.5rem",
-                  "color": "#ffffff"
-                },
-                ".soc-item": {
-                  "margin": "0 .5rem"
-                },
-                "a": {
-                  "margin": "0",
-                  "opacity": ".5",
-                  "-webkit-transition": ".2s linear",
-                  "transition": ".2s linear",
-                  "&:hover": {
-                    "opacity": "1"
-                  }
-                },
-                "@media (max-width: 767px)": {
-                  "justify-content": "center",
-                  "-webkit-justify-content": "center"
-                }
-              },
-              ".row-copirayt": {
-                "word-break": "break-word",
-                "width": "100%",
-                "p": {
-                  "width": "100%"
-                }
-              }
-            },
-            ".media-container-row .mbr-text": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".media-container-row .mbr-text I": {
-              "color": "#2f24f5"
-            }
-          },
-          "_name": "footer7",
-          "_customHTML": "<section group=\"Footers\" global=\"\" once=\"\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Menu items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Social items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Nadruk effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Achtergrondafbeelding\" value=\"@PROJECT_PATH@/assets/images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Achtergrondkleur\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Dekkleur\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Doorschijnendheid\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list=\"\" mbr-list-grow=\"menuItems\">\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">\n                        <a class=\"text-white mbr-bold\" href=\"#\" target=\"_blank\">Over ons</a>\n                    </li>\n                    \n                    \n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list=\"\" mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon=\"\" class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".media-container-row .mbr-text\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email: <i>Yanni.Timmerman@student.luca-arts.be\n                </i></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "footer7-33",
-          "_isUserblock": true,
-          "_sourceTheme": "mobirise4",
-          "_cid": "rhLk4FR4a5",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": true,
           "_params": {}
         },
         {
@@ -2920,7 +2825,7 @@
             }
           },
           "_name": "content15",
-          "_customHTML": "<section>\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Breedte\" name=\"contentWidth\" min=\"66\" max=\"100\" value=\"79\" step=\"1\">\n        <input type=\"range\" inline title=\"Formaten\" name=\"proportions\" min=\"30\" max=\"300\" value=\"97\" step=\"1\">\n        <input type=\"checkbox\" title=\"Toon onderschrift\" name=\"showCaption\">\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div class=\"container\">\n            <div class=\"media-container-row\" mbr-style=\"{'width':contentWidth+'%'}\">\n                <div class=\"img-item item1\" mbr-style=\"{'width':proportions+'%'}\">\n                    <div class=\"img-cont\">\n                        <img src=\"@PROJECT_PATH@/assets/images/manual3-2.jpg\" alt title>\n                        <div class=\"img-caption\" mbr-if=\"showCaption\">\n                            <p class=\"mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-5\">\n                                leuke\n                            </p>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"img-item\">\n                    <div class=\"img-cont\">\n                        <a href=\"page13.html\"><img src=\"@PROJECT_PATH@/assets/images/newspaper-opdracht-trump4-3-800x1200.jpg\" alt title></a>\n                        <div class=\"img-caption\" mbr-if=\"showCaption\">\n                            <p class=\"mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-5\">\n                                Mobiel-vriendelijke\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n    </div>\n</section>",
+          "_customHTML": "<section>\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Breedte\" name=\"contentWidth\" min=\"66\" max=\"100\" value=\"66\" step=\"1\">\n        <input type=\"range\" inline title=\"Formaten\" name=\"proportions\" min=\"30\" max=\"300\" value=\"100\" step=\"1\">\n        <input type=\"checkbox\" title=\"Toon onderschrift\" name=\"showCaption\">\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div class=\"container\">\n            <div class=\"media-container-row\" mbr-style=\"{'width':contentWidth+'%'}\">\n                <div class=\"img-item item1\" mbr-style=\"{'width':proportions+'%'}\">\n                    <div class=\"img-cont\">\n                        <img src=\"@PROJECT_PATH@/assets/images/manual3-2.jpg\" alt title>\n                        <div class=\"img-caption\" mbr-if=\"showCaption\">\n                            <p class=\"mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-5\">\n                                leuke\n                            </p>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"img-item\">\n                    <div class=\"img-cont\">\n                        <a href=\"page13.html\"><img src=\"@PROJECT_PATH@/assets/images/newspaper-opdracht-trump4-3-800x1200.jpg\" alt title></a>\n                        <div class=\"img-caption\" mbr-if=\"showCaption\">\n                            <p class=\"mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-5\">\n                                Mobiel-vriendelijke\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n    </div>\n</section>",
           "_cid": "rauQIW2UHC",
           "_anchor": "content15-3c",
           "_protectedParams": [],
@@ -3250,6 +3155,173 @@
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
           "_cid": "rauHRuI392",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              }
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                }
+              }
+            }
+          },
+          "_name": "gallery3",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Volle breedte\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" inline>\n        <input type=\"range\" title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Dekkleur\" name=\"overlayColor\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Overlay met kleurovergang\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay kleur 1\" name=\"overlayColor2\" value=\"#ffffff\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay kleur 2\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" inline>\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Galerij\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"0\"></div>\n    </div>\n\n</section>",
+          "_anchor": "gallery3-36",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "rhLwUDjmZX",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Geweldige",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump-2-2-2000x3002.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump-2-2-2000x3002-800x1201.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Onderschrift hier",
+                "active": false
+              },
+              {
+                "tags": "Geweldige",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump-2-2000x3002.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump-2-2000x3002-800x1201.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Onderschrift hier",
+                "active": false
+              },
+              {
+                "tags": "Sympathieke",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump3-2-2000x3002.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump3-2-2000x3002-800x1201.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Onderschrift hier",
+                "active": false
+              },
+              {
+                "tags": "Bewegende",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump4-3-800x1200.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/newspaper-opdracht-trump4-3-800x1200-800x1200.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Onderschrift hier",
+                "active": true
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".mbr-text P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b>Project:</b> Design a 24-paged newspaper with the topics Ronald \nMcDonald and Donald Trump. Take a specific critical opinion in this subject and develop a matching dingbat font. This 24 counting font will be digitalized in Robofont.\nFinally, except for your dingbat, only use Times New Roman and Neue Helvetica. The newspapers will be sent to and printed by: The Newspaper Club in London.&nbsp;</p><p><b>Interpretation:</b>&nbsp;<span style=\"font-size: 0.8rem;\">The newspaper has become a comparison between \nDonald Trump and P.T. Barnum in which I want to reflect the idea of Trump who rules over America like it’s some kind of illusionary circus. Every page represents an ‘act’ in which rivals are pictured as freaks in his show. \nBoth the dingbat font and the pictures in the paper consist of bizar elements wich can be found in optical illusions.&nbsp;</span></p><p><br></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rhLy5OJms6",
+          "_anchor": "content1-37",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
