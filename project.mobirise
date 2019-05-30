@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Yanni Timmerman 3de bachelor ",
-    "currentPage": "index.html",
+    "currentPage": "- Typeface.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -58,7 +58,7 @@
     ],
     "favicon": "",
     "noImageResize": "true",
-    "uniqCompNum": 149,
+    "uniqCompNum": 153,
     "versionPublish": "4.8.3",
     "screenshot": "screenshot.png",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-126696837-1\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'UA-126696837-1');\r\n</script>",
@@ -2293,6 +2293,48 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Volle breedte\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Toon tekst\" name=\"showText\">        \n        \n        <input type=\"range\" inline title=\"Breedte\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Verloop\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Kleur 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/victoria.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\">\n                    Maak knappe websites!\n                </div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rrYFn6LHST",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image2-48"
         }
       ]
     },
